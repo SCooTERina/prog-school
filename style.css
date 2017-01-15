@@ -1,4 +1,4 @@
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -6,8 +6,16 @@
 }
 
 body {
-	width: 1280px;
+	width: 1024px;
 	margin: 0 auto;
+}
+
+iframe {
+	border: 0;
+}
+
+.logo{
+	width: 300px;
 }
 
 p {
