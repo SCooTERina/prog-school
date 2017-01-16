@@ -15,9 +15,42 @@ iframe {
 }
 
 .logo{
-	width: 300px;
+	float: left;
 }
 
-p {
-	font-style: bold;
+.button{
+	float: right;
+	padding: 30px;
+}
+
+.button button{
+	background-color: #0af;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.button button:hover{
+	box-shadow: 0 0 3px #0af;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu img{
+	height: 130px;
+}
+
+.menu p{
+	text-align: center;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0px; left: 0px;
 }
