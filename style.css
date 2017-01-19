@@ -1,29 +1,74 @@
 ﻿* {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	text-decoration: none;
 }
 
 body {
 	width: 1024px;
 	margin: 0 auto;
+	background-color: #d7e7f7;
+	font-size: 18px;
+}
+
+h1, p{
+	color: #333;
+}
+
+header{
+	height: 110px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px; left: 0px;
+	width: 100%;
+}
+
+footer iframe{
+	height: 60px;
 }
 
 iframe {
 	border: 0;
 }
 
+hr{
+	margin: 3px 0;
+	color: #0af;
+}
+
+.menu{
+	padding: 40px 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu div{
+	margin-right: 30px;
+}
+
+.menu div a{
+	color: #0af;
+	padding: 5px 20px;
+	border: 2px dashed #0af;
+}
+
+.menu div:hover a{
+	color: white;
+	border: 2px dashed white;
+	background-color: #0af;
+}
+
 .logo{
 	float: left;
+	height: 100px;
 }
 
-.button{
-	float: right;
-	padding: 30px;
-}
-
-.button button{
+a.buy, input[type="submit"]{
+	margin-top: 10px;
+	display: block;
+	width: 150px;
 	background-color: #0af;
 	color: white;
 	padding: 10px 20px;
@@ -31,26 +76,50 @@ iframe {
 	border: none;
 	cursor: pointer;
 	font-weight: bold;
-}
-
-.button button:hover{
-	box-shadow: 0 0 3px #0af;
-}
-
-.menu{
-	display: flex;
-	justify-content: space-around;
-}
-
-.menu img{
-	height: 130px;
-}
-
-.menu p{
 	text-align: center;
 }
 
-.footer{
-	position: absolute;
-	bottom: 0px; left: 0px;
+a.buy:hover, input[type="submit"]:hover{
+	box-shadow: 0 0 3px #0af;
+}
+
+.itemlist{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.center, .itemlist p{
+	text-align: center;
+}
+
+fieldset{
+	display: flex;
+	border: 2px dashed #0af;
+	padding: 30px;
+}
+
+fieldset div{
+	margin-top: 10px;
+}
+
+fieldset label{
+	display: inline-block;
+	width: 130px;
+}
+
+legend{
+	margin-left: 30px;
+	font-size: 25px;
+}
+
+input[type="text"], select{
+	border: 1px solid #0af;
+	border-radius: 10px;
+	height: 34px;
+	width: 200px;
+	padding: 0 20px;
+	color: #0af;
+	font-size: 20px;
+	box-sizing: border-box;
 }
