@@ -17,32 +17,35 @@
 		<form>
 			<fieldset>
 				<legend>Заказ товара</legend>
-				<div>
-					<label for="name">Ваше имя:</label>
+				<div class="center">
+					<label for="name">Ваше имя:</label><br>
 					<input type="text" id="name" required>
 				</div>
-				<div>
-					<label for="email">Ваш e-mail:</label>
+				<div class="center">
+					<label for="email">Ваш e-mail:</label><br>
 					<input type="text" id="email">
 				</div>
-				<div>
-					<label for="phone">Ваш телефон:</label>
+				<div class="center">
+					<label for="phone">Ваш телефон:</label><br>
 					<input type="text" id="phone" required>
 				</div>
-				<div>
-					<label>Товар:</label>
+				<div class="center">
+					<label>Товар:</label><br>
 					<select>
 						<option value="comp">Компьютер</option>
 						<option value="phone">Телефон</option>
 						<option value="planshet">Планшет</option>
 					<select>
-				</div>
-				<input type="submit" value="Заказать">
+				</div><br clear="all">
+				<p><input type="submit" value="Заказать" class="center-m"></p>
 			</fieldset>
 		</form>
 		<h1 class="center" style="margin-top: 20px;">О нас</h1>
-			<p><b>Телефон:</b> 778-33-22</p>
-			<p><b>Адрес:</b> г.Раменское ул.Дергаевская д.10</p>
+			<p class="cont center">
+				<span><b>Телефон:</b> <a href="tel:778-33-22">778-33-22</a></span>
+				<span><b>E-mail:</b> <a href="mailto:avito@mail.ru" target="_blank">avito@mail.ru</a></span>
+				<span><b>Адрес:</b> г.Раменское ул.Дергаевская д.10</span>
+			</p>
 			<iframe src="https://api-maps.yandex.ru/frame/v1/-/CZX3VUix" width="100%" height="400" frameborder="0"></iframe>
 	</content>
 	
