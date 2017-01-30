@@ -33,6 +33,7 @@ footer{
 	position: fixed;
 	bottom: 0px; left: 0px;
 	width: 100%;
+	height: 61px;
 }
 
 footer iframe{
@@ -113,6 +114,12 @@ a.buy:hover, input[type="submit"]:hover{
 	list-style-image: url(img/arrow.png);
 }
 
+.circle li b:first-letter {
+    font-family: "Times New Roman", serif;
+    font-size: 150%;
+    color: blue;
+}
+
 .circle li b{
 	display: inline-block;
 	width: 160px;
@@ -152,4 +159,60 @@ input[type="text"], select{
 	color: #0af;
 	font-size: 20px;
 	box-sizing: border-box;
+	text-transform: capitalize;
+}
+
+input[type="text"]:focus{
+	background-color: lightblue;
+	color: white;
+}
+
+.features{
+	width: 40%;
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+
+.features th{
+	background-color: grey;
+	padding: 10px;
+	height: 50px;
+}
+
+.features tr:nth-child(2n){
+	background-color: #b1b3b1;
+}
+
+.features tr:nth-child(2n-1){
+	background-color: #c0c0c0;
+}
+
+.features td{
+	padding: 10px;
+}
+
+.features td:first-child{
+	text-align: right;
+}
+
+.callus {
+	position: fixed; top: 400px; left: -65px;
+}
+
+.callus p{
+	transform: rotate(90deg);
+	border: 1px solid #0af;
+	background-color: #0af;
+	border-radius: 20px 20px 0 0;
+	padding: 10px 20px;
+	color: white;
+}
+
+.callus p:hover{
+	box-shadow: 0 0 10px #0af;
+	cursor: pointer;
+}
+
+.callus p:active{
+	box-shadow: inset 0 0 10px 5px white;
 }
